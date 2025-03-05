@@ -11,9 +11,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		0675A0142D64D5AF009069C6 /* CustomComponents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
 		06EE10EA2D60DA8C00F7FBCE /* CarShopApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CarShopApp;
+			sourceTree = "<group>";
+		};
+		06EE10FB2D60DB0400F7FBCE /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06EE10FC2D60DB0C00F7FBCE /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		06EE10FD2D60DB1300F7FBCE /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +52,10 @@
 		06EE10DF2D60DA8C00F7FBCE = {
 			isa = PBXGroup;
 			children = (
+				0675A0142D64D5AF009069C6 /* CustomComponents */,
+				06EE10FD2D60DB1300F7FBCE /* Views */,
+				06EE10FC2D60DB0C00F7FBCE /* ViewModels */,
+				06EE10FB2D60DB0400F7FBCE /* Models */,
 				06EE10EA2D60DA8C00F7FBCE /* CarShopApp */,
 				06EE10E92D60DA8C00F7FBCE /* Products */,
 			);
@@ -61,7 +85,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				0675A0142D64D5AF009069C6 /* CustomComponents */,
 				06EE10EA2D60DA8C00F7FBCE /* CarShopApp */,
+				06EE10FB2D60DB0400F7FBCE /* Models */,
+				06EE10FC2D60DB0C00F7FBCE /* ViewModels */,
+				06EE10FD2D60DB1300F7FBCE /* Views */,
 			);
 			name = CarShopApp;
 			packageProductDependencies = (

@@ -1,18 +1,14 @@
-//
-//  CustomTextFieldStyle.swift
-//  CarShopApp
-//
-//  Created by Yordan Iturra Correa on 18-02-25.
-//
-
 import SwiftUI
 
-struct CustomTextFieldStyle: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct CustomTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .padding()
+            .background(Color.white.opacity(0.9))
+            .cornerRadius(8)
+            .overlay(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(Color.gray.opacity(0.3), lineWidth: 1)
+            )
     }
-}
-
-#Preview {
-    CustomTextFieldStyle()
 }

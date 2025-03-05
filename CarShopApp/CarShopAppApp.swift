@@ -1,32 +1,10 @@
-//
-//  CarShopAppApp.swift
-//  CarShopApp
-//
-//  Created by Yordan Iturra Correa on 15-02-25.
-//
-
 import SwiftUI
-import SwiftData
 
 @main
-struct CarShopAppApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+struct ShopApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
-        .modelContainer(sharedModelContainer)
     }
 }
